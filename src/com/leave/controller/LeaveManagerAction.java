@@ -39,6 +39,7 @@ public class LeaveManagerAction extends ActionSupport {
 		try {
 			LeaveManager leave = getLeave();
 			leave.setCreatedOn(new java.util.Date());
+			leave.setStatus("Pending");
 			leaveManagerDao.add(leave);
 		} catch (Exception e) {
 			e.printStackTrace();

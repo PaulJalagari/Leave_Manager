@@ -14,7 +14,6 @@
 		<s:textfield name="leave.Type_of_leave" label="Type" />
 		<s:textfield name="leave.From_date" label="From" />
 		<s:textfield name="leave.To_date" label="To" />
-		<s:textfield name="leave.Status" label="Status" />
 
 		<s:submit value="Submit" align="center" />
 	</s:form>
