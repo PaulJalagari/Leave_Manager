@@ -34,15 +34,15 @@
 			<th>Status</th>
 			<th>Action</th>
 		</tr>
-		<s:iterator value="leaveList" var="leaves">
+		<s:iterator value="leaveList" var="leaves" >
 			<tr>
-				<td><s:property value="Id"/></td>
-				<td><s:property value="NAME"/></td>
-				<td><s:property value="Type_of_leave"/></td>
-				<td><s:property value="From_date"/></td>
-				<td><s:property value="To_date"/></td>
-				<td><s:property value="Status"/></td>
-				<td><a href="delete?id=<s:property value="Id"/>">delete</a></td>
+				<td><s:property value="Id" /></td>
+				<td><s:property value="NAME" /></td>
+				<td><s:property value="Type_of_leave" /></td>
+				<td><s:property value="From_date" /></td>
+				<td><s:property value="To_date" /></td>
+				<td><s:property value="Status" /></td>
+				<td><a href="delete?Id=<s:property value="Id"/>">delete</a></td>
 			</tr>
 		</s:iterator>
 	</table>

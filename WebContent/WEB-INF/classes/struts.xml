@@ -26,8 +26,8 @@
 		</action>
 
 		<action name="index" class="com.leave.controller.LeaveManagerAction">
-			 <result name="input">/itemsAddDelete.jsp</result>
-		     <result name="success">/itemsAddDelete.jsp</result>
+			 <result name="input">/submitApprove.jsp</result>
+		     <result name="success">/submitApprove.jsp</result>
 		</action>
 	</package>
 </struts>

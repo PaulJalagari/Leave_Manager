@@ -38,9 +38,7 @@ public class LeaveManagerAction extends ActionSupport {
 		System.out.println(getLeave());
 		try {
 			LeaveManager leave = getLeave();
-			leave.setCreatedOn(new java.util.Date()); // for current date to
-														// store on createdOn
-														// field.
+			leave.setCreatedOn(new java.util.Date());
 			leaveManagerDao.add(leave);
 		} catch (Exception e) {
 			e.printStackTrace();

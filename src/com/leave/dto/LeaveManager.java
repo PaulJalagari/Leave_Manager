@@ -19,12 +19,12 @@ public class LeaveManager implements Serializable {
 
 	private static final long serialVersionUID = -1883317581153939034L;
 
+	private int Id;
 	private String NAME;
 	private String Type_of_leave;
-	private String Status;
 	private String From_date;
 	private String To_date;
-	private int Id;
+	private String Status;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)

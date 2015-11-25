@@ -43,6 +43,10 @@ public class LeaveManagerDAO extends HibernateUtil {
 			session.getTransaction().rollback();
 		}
 		session.getTransaction().commit();
-		return leaves;
+		if (leaves != null) {
+			return leaves;
+		} else {
+			return null;
+		}
 	}
 }
