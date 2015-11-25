@@ -4,30 +4,30 @@
     "http://struts.apache.org/dtds/struts-2.0.dtd">
 
 <struts>
-	<constant name="struts.enable.DynamicMethodInvocation" 	value="false" />
+	<constant name="struts.enable.DynamicMethodInvocation" value="false" />
 	<constant name="struts.devMode" value="false" />
 
 	<package name="default" extends="struts-default" namespace="/">
 
-		<action name="add"
-			class="com.leave.controller.LeaveManagerAction" method="add" >
+		<action name="add" class="com.leave.controller.LeaveManagerAction"
+			method="add">
 			<result name="success" type="chain">index</result>
 			<result name="input" type="chain">index</result>
 		</action>
-		
-		<action name="delete"
-			class="com.leave.controller.LeaveManagerAction" method="delete" >
+
+		<action name="update" class="com.leave.controller.LeaveManagerAction"
+			method="update">
 			<result name="success" type="chain">index</result>
 		</action>
-		
-		<action name="list"
-			class="com.leave.controller.LeaveManagerAction" method="list" >
+
+		<action name="list" class="com.leave.controller.LeaveManagerAction"
+			method="list">
 			<result name="success" type="chain">index</result>
 		</action>
 
 		<action name="index" class="com.leave.controller.LeaveManagerAction">
-			 <result name="input">/submitApprove.jsp</result>
-		     <result name="success">/submitApprove.jsp</result>
+			<result name="input">/submitApprove.jsp</result>
+			<result name="success">/submitApprove.jsp</result>
 		</action>
 	</package>
 </struts>

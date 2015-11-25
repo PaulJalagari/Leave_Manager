@@ -42,7 +42,7 @@
 				<td><s:property value="From_date" /></td>
 				<td><s:property value="To_date" /></td>
 				<td><s:property value="Status" /></td>
-				<td><a href="delete?Id=<s:property value="Id"/>">delete</a></td>
+				<td><a href="update?Id=<s:property value="Id"/>">Approve</a></td>
 			</tr>
 		</s:iterator>
 	</table>

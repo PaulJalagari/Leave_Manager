@@ -52,8 +52,8 @@ public class LeaveManagerAction extends ActionSupport {
 		return SUCCESS;
 	}
 
-	public String delete() {
-		leaveManagerDao.delete(getId());
+	public String update() {
+		leaveManagerDao.update(getId());
 		return SUCCESS;
 	}
 

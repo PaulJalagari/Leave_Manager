@@ -18,12 +18,13 @@ public class LeaveManagerDAO extends HibernateUtil {
 		return leave;
 	}
 
-	public LeaveManager delete(int Id) {
+	public LeaveManager update(int Id) {
 		Session session = HibernateUtil.createSessionFactory().getCurrentSession();
 		session.beginTransaction();
 		LeaveManager leave = (LeaveManager) session.load(LeaveManager.class, Id);
 		if (null != leave) {
-			session.delete(leave);
+			leave.setStatus("Approved");
+			session.merge(leave);
 		}
 		session.getTransaction().commit();
 		return leave;
