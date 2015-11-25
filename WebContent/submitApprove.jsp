@@ -16,7 +16,7 @@
 		<s:textfield name="leave.To_date" label="To" />
 		<s:textfield name="leave.Status" label="Status" />
 
-		<s:submit value="Add leave" align="center" />
+		<s:submit value="Submit" align="center" />
 	</s:form>
 
 	<s:form action="list" method="post">
