@@ -57,11 +57,11 @@ public class LeaveManagerAction extends ActionSupport {
 		return SUCCESS;
 	}
 
-	public List<LeaveManager> getleaveList() {
+	public List<LeaveManager> getLeaveList() {
 		return leaveList;
 	}
 
-	public void setleaveList(List<LeaveManager> leaveList) {
+	public void setLeaveList(List<LeaveManager> leaveList) {
 		this.leaveList = leaveList;
 	}
 

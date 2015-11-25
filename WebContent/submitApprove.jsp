@@ -34,7 +34,7 @@
 			<th>Status</th>
 			<th>Action</th>
 		</tr>
-		<s:iterator value="leaveList" var="leaves" >
+		<s:iterator value="leaveList" var="leaves">
 			<tr>
 				<td><s:property value="Id" /></td>
 				<td><s:property value="NAME" /></td>
