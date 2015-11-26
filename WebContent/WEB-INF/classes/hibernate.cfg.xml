@@ -29,6 +29,8 @@
 
 		<mapping class="com.leave.dto.LeaveManager" />
 
+		<mapping class="com.leave.dto.Users" />
+
 	</session-factory>
 
 </hibernate-configuration>

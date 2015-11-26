@@ -8,6 +8,11 @@
 	<constant name="struts.devMode" value="false" />
 
 	<package name="default" extends="struts-default" namespace="/">
+		<action name="login" class="com.leave.controller.LoginAction">
+			<result name="success" type="chain">index</result>
+			<result name="input">/index.jsp</result>
+			<result name="error">/index.jsp</result>
+		</action>
 
 		<action name="add" class="com.leave.controller.LeaveManagerAction"
 			method="add">
