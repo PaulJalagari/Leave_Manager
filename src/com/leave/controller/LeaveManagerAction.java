@@ -2,7 +2,7 @@ package com.leave.controller;
 
 import java.util.List;
 
-import com.leave.controller.LeaveManagerDAO;
+import com.leave.dao.LeaveManagerDAO;
 import com.leave.dto.LeaveManager;
 import com.opensymphony.xwork2.ActionSupport;
 

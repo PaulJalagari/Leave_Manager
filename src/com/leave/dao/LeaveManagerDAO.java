@@ -1,4 +1,4 @@
-package com.leave.controller;
+package com.leave.dao;
 
 import java.util.List;
 
